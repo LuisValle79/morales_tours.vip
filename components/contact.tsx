@@ -42,7 +42,7 @@ export default function Contact() {
       form.append('_subject', 'Nuevo mensaje desde Morales Tours VIP')
       form.append('_autoresponse', 'Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos pronto. - Equipo Morales Tours VIP')
 
-      const response = await fetch('https://formsubmit.co/luisvalle231990@gmail.com', {
+      const response = await fetch('https://formsubmit.co/a5f0c11cb9ee02fe7ce7f80613e96694', {
         method: 'POST',
         body: form
       })
