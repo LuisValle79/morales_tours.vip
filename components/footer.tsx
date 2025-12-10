@@ -4,7 +4,7 @@ import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   // Use a fixed year to prevent hydration mismatch
-  const currentYear = 2024
+  const currentYear = 2025
 
   const footerLinks = {
     empresa: [
@@ -139,18 +139,24 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="text-center md:text-right text-background/60 text-sm">
-              <p>© {currentYear} Morales Tours VIP. Todos los derechos reservados.</p>
-              <div className="flex gap-4 mt-2 justify-center md:justify-end">
-                <Link href="#" className="hover:text-secondary transition-colors">
-                  Política de Privacidad
-                </Link>
-                <span>•</span>
-                <Link href="#" className="hover:text-secondary transition-colors">
-                  Términos y Condiciones
-                </Link>
-              </div>
-            </div>
+<div className="text-center md:text-right text-background/60 text-sm">
+  <p>© {currentYear} Morales Tours VIP. Todos los derechos reservados.</p>
+
+  <p className="mt-1">
+    Desarrollado por <span className="font-semibold text-secondary">Luis Valle Coronado</span>
+  </p>
+
+  <div className="flex gap-4 mt-2 justify-center md:justify-end">
+    <Link href="#" className="hover:text-secondary transition-colors">
+      Política de Privacidad
+    </Link>
+    <span>•</span>
+    <Link href="#" className="hover:text-secondary transition-colors">
+      Términos y Condiciones
+    </Link>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
